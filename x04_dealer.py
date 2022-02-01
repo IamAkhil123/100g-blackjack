@@ -1,5 +1,19 @@
 #!python3
+import random
 
+deck = ['3C', '3S', '8S', '3D', 'AC', '9H', 'QC', 'TD', 'TH', '8H', '8D', '7C', 'TS', '7D', 'AD', 'QD', 'KC', '6H', 'JH', 'KH', 'QS', '6C', '4H', '7H', '5S', '2S', 'AS', 'AH', '5C', '2D', '2H', '6D', 'TC', '4C', 'JS', 'JC', 'KD', '2C', '4S', '3H', '5H', '7S', 'KS', '5D', 'QH', '6S', '8C', '9D', 'JD', '9S', '9C', '4D']
+
+def dealer(deck):
+ random.shuffle(deck)
+ a = random.choice(deck)
+ b = deck.remove(a)
+ c = 1
+ print (a and b and c)
+
+p = dealer(deck)
+print(p)
+
+"""
 '''
 In Blackjack, the dealer always must follow the same rules.
 
@@ -32,3 +46,4 @@ def main():
   assert dealer(deck) == [['3C', '3S', '8S', '3D'], 17, run1[2] ]
   run2 = dealer( run1[2] )
   assert dealer(run1[2]) == [['AC', '9H'], 20, run2[2] )
+"""

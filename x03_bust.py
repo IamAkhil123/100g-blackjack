@@ -1,5 +1,17 @@
 #!python3
 
+score = 19
+
+def busts(score):
+ if score > 21:
+  return True
+ else:
+  return False
+
+p = busts(score)
+print(p)
+
+"""
 '''
 In Blackjack, having a score over 21 is an automatic loss.
 Create a function that determines if the score is a bust
@@ -27,3 +39,4 @@ def main():
   
 if __name__ == "__main__":
   main()
+"""

@@ -1,5 +1,15 @@
 #!python3
 
+hand = ['AH','3D','4S']
+
+def value(hand):
+  x = sum(list)
+  return x
+
+p = value(hand)
+print(p)
+
+"""
 def value(hand):
   '''
   input:
@@ -11,9 +21,8 @@ def value(hand):
   may return a list if the hand contains an Ace
   eg:
   '''
-  
-  return None
 
+  return None
 
 def main():
   assert value(['AH','3D','4S']) ==[8,18]
@@ -23,3 +32,4 @@ def main():
 
 if __name__ == "__name__":
   main()
+"""
