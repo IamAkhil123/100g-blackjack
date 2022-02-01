@@ -1,11 +1,21 @@
 #!python3
 
+x = []
+def deck(x):
+  cards = ["A,J,Q,K,T"]
+  suits = ['C','D','H','S']
+  deck == cards = suits
+  return deck
+
+p = deck(x)
+print(p)
+
 """
 Create a list of cards
 the cards should be denoted with a number or A, J, Q, K, T (for ace, jack, queen, king or ten)
 as well as a suit
 """
-
+"""
 def createDeck():
   ranks = ['2','3','4','5','6','7','8','9','T','J','Q','K','A']
   suits = ['C','D','H','S']
@@ -27,3 +37,4 @@ def main():
   
 if __name__ == "__main__":
   main()
+"""
